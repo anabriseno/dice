@@ -1,0 +1,40 @@
+body {
+  background-color: #1d5fb6;
+}
+
+h1 {
+  font-family: "Helvetica";
+  font-size: 70px;
+  font-variant: normal;
+  text-align: center;
+
+}
+
+h2 {
+  font-family: "Helvetica";
+  font-size: 30px;
+  font-variant: normal;
+  text-align: center
+
+}
+
+ol {
+  font-style: italic;
+
+}
+
+.jumbotron {
+  background-color: #dd5428;
+  font-family: "Helvetica";
+  font-size: 55px;
+  font-variant: normal;
+  text-align: center;
+
+}
+
+.column {
+  float: inherit;
+  width: 50%;
+}
+
+.button {background-color: #f44336;}
