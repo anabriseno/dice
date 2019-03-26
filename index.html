@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>PIG DICE!</title>
+  </head>
+  <div class="jumbotron text-center">
+    <h1>PIG DICE!</h1>
+      <p>Lets play!</p>
+  </div>
+  <body>
+    <div class="container">
+      <h2> Rules: <h2>
+        <ol>
+          <b>1.</b> Numbers divisible by 3 are replaced with "ping"
+          <b>2.</b> Numbers divisible by 5 are replaced with "pong"
+          <b>3.</b> Numbers divisible by 15 are replaced with "pingpong"
+        </ol>
+
+      <form id="dice">
+        <div class="form-group">
+          <label for="number1">ENTER A NUMBER:</label>
+          <input id="number1" type="text">
+        </div>
+
+        <button type="submit" class="btn">COMPUTE!</button>
+      </form>
+
+      <div id="result">
+
+      </div>
+    </div>
+  </body>
+</html>
