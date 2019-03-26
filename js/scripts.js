@@ -1,13 +1,15 @@
-// $(document).ready(function() {
-  // $('input[type=button]').click(function)
-    // var = Math.floor(Math.random() * 6);
-
-
-// });
-
-
 $(document).ready(function() {
-  $("form#dice"'input[type=button]').click(function() {
 
-  )}
-)};
+  $("form#player1").(function() {
+   event.preventDefault();
+   var player1  = parseInt ($("input#player1").val());
+     return Math.floor(Math.random() * 6) + 1 ;
+  });
+
+  $("form#player2").(function() {
+    event.preventDefault();
+    var player2 = parseInt ($("input#player1").val());
+      return Math.floor(Math.random()* 6) + 1 ;
+  });
+
+});
