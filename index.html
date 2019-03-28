@@ -7,39 +7,58 @@
     <script src="js/scripts.js"></script>
     <title>PIG DICE!</title>
   </head>
-  <div class="jumbotron text-center">
-    <h1>PIG DICE!</h1>
-      <p></p>
-  </div>
+
   <body>
-    <div class="container">
+    <div class="jumbotron text-center">
+    <h1>P I G   D I C E !</h1>
+      <p> TWO PLAYER DICE GAME</p>
+    </div>
+    <div class="start container">
+      <div class="row">
+        <div class="column">
+          <form id="player-one">
+            <div class="form-group">
+              <label for="player1Name">Player 1 Name:</label>
+              <input id="player1Name" type="text">
+            </div>
+          </form>
+        </div>
+
+        <div class="column">
+          <form id="player-two">
+            <div class="form-group">
+              <label for="player2Name">Player 2 Name:</label>
+              <input id="player2Name" type="text">
+            </div>
+          </form>
+        </div>
+          <button id="start" class="btn">Start</button>
+      </div>
       <h2> Rules: <h2>
         <ol>
           <b>1.</b> If player rolls a 1, they score nothing and it becomes the next player turn.
-          <b>2.</b> if the player rolls any other number, it is added to their turn total and the player's turn continues.
-          <b>3.</b> If the player chooses to hold, their turn total is added to their score, and it becomes the next players turn. The first player to score 100 or more points wins!
+          <b>2.</b> If the player rolls any other number, it is added to their turn total and the player's turn continues.
+          <b>3.</b> If the player chooses to hold, their turn total is added to their score, and it becomes the next players turn.
+          <b>4.</b> The first player to score 100 or more points wins!
         </ol>
-        <div class="row">
-          <div class="column">
-            <form id="player1">
-              <div class="form-group">
-                <label for="player1">PLAYER ONE:</label>
-                <input id="player1" type="button" value="roll dice">
-              </div>
-            </form>
-          </div>
-              <br>
-          <div class="column">
-            <form id="player2">
-              <div class="form-group">
-                <label for="player2">PLAYER TWO:</label>
-                <input id="player2" type="button" value="roll dice">
-              </div>
-            </form>
-          </div>
-
-            <div id="result"></div>
-        </div>
     </div>
+
+    <div class="game container">
+      <div class="row">
+        <div class="column">
+          <h>PLAYER ONE:</h>
+            <button id="player1" class="btn">Roll</button>
+            <span id="player1-roll1"></span>
+            <span id="player1-total"></span>
+          </div>
+        <div class="column">
+          <h>PLAYER TWO:</h>
+            <button id="player2" class="btn">Roll</button>
+            <span id="player2-roll1"></span>
+            <span id="player2-total"></span>
+        </div>
+      </div>
+    </div>
+
   </body>
 </html>
